@@ -84,46 +84,46 @@
                         <th style="width: 3rem">
                             <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
                         </th>
-                                
+
                         <th pSortableColumn="qteDemandee">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'expressionBesoinDetail.qteDemandee' | translate}}</span>
                                 <p-sortIcon field="qteDemandee"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="qteAccordee">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'expressionBesoinDetail.qteAccordee' | translate}}</span>
                                 <p-sortIcon field="qteAccordee"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="qteLivre">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'expressionBesoinDetail.qteLivre' | translate}}</span>
                                 <p-sortIcon field="qteLivre"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="expressionBesoin">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'expressionBesoinDetail.expressionBesoin' | translate}}</span>
                                 <p-sortIcon field="expressionBesoin"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="produit">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'expressionBesoinDetail.produit' | translate}}</span>
                                 <p-sortIcon field="produit"></p-sortIcon>
                             </div>
                         </th>
-                                
+
                         <th>Actions</th>
                     </tr>
                 </ng-template>
@@ -132,21 +132,21 @@
                         <td>
                             <p-tableCheckbox [value]="element"></p-tableCheckbox>
                         </td>
-                            
+
                         <td>{{element.qteDemandee}}</td>
-                            
-                            
+
+
                         <td>{{element.qteAccordee}}</td>
-                            
-                            
+
+
                         <td>{{element.qteLivre}}</td>
-                            
-                            
-                        <td>{{element.expressionBesoin?.id}}</td>
-                            
-                            
+
+
+                        <td>{{element.expressionBesoin?.dateExpression}}</td>
+
+
                         <td>{{element.produit?.libelle}}</td>
-                            
+
                         <td>
                             <button pButton pRipple icon="pi pi-pencil"  class="p-button-rounded p-button-info mr-2" (click)="edit(element)"  *ngIf="editActionIsValid"></button>
                             <button pButton pRipple icon="pi pi-list" class="p-button-rounded p-button-secondary mr-2" (click)="view(element)"  *ngIf="viewActionIsValid"></button>

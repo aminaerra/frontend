@@ -84,46 +84,46 @@
                         <th style="width: 3rem">
                             <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
                         </th>
-                                
+
                         <th pSortableColumn="entiteAdmin">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'budgetEntiteAdmin.entiteAdmin' | translate}}</span>
                                 <p-sortIcon field="entiteAdmin"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="montantEntite">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'budgetEntiteAdmin.montantEntite' | translate}}</span>
                                 <p-sortIcon field="montantEntite"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="montantInvEntite">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'budgetEntiteAdmin.montantInvEntite' | translate}}</span>
                                 <p-sortIcon field="montantInvEntite"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="montantFctEntite">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'budgetEntiteAdmin.montantFctEntite' | translate}}</span>
                                 <p-sortIcon field="montantFctEntite"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="budget">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'budgetEntiteAdmin.budget' | translate}}</span>
                                 <p-sortIcon field="budget"></p-sortIcon>
                             </div>
                         </th>
-                                
+
                         <th>Actions</th>
                     </tr>
                 </ng-template>
@@ -132,21 +132,21 @@
                         <td>
                             <p-tableCheckbox [value]="element"></p-tableCheckbox>
                         </td>
-                            
+
                         <td>{{element.entiteAdmin?.libelle}}</td>
-                            
-                            
+
+
                         <td>{{element.montantEntite}}</td>
-                            
-                            
+
+
                         <td>{{element.montantInvEntite}}</td>
-                            
-                            
+
+
                         <td>{{element.montantFctEntite}}</td>
-                            
-                            
-                        <td>{{element.budget?.id}}</td>
-                            
+
+
+                        <td>{{element.budget?.montant}}</td>
+
                         <td>
                             <button pButton pRipple icon="pi pi-pencil"  class="p-button-rounded p-button-info mr-2" (click)="edit(element)"  *ngIf="editActionIsValid"></button>
                             <button pButton pRipple icon="pi pi-list" class="p-button-rounded p-button-secondary mr-2" (click)="view(element)"  *ngIf="viewActionIsValid"></button>

@@ -81,38 +81,38 @@
                         <th style="width: 3rem">
                             <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
                         </th>
-                                
+
                         <th pSortableColumn="budget">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMateriel.budget' | translate}}</span>
                                 <p-sortIcon field="budget"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="montantTotal">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMateriel.montantTotal' | translate}}</span>
                                 <p-sortIcon field="montantTotal"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="dateAchat">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMateriel.dateAchat' | translate}}</span>
                                 <p-sortIcon field="dateAchat"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="typeAchatMateriel">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMateriel.typeAchatMateriel' | translate}}</span>
                                 <p-sortIcon field="typeAchatMateriel"></p-sortIcon>
                             </div>
                         </th>
-                                
+
                         <th>Actions</th>
                     </tr>
                 </ng-template>
@@ -121,18 +121,18 @@
                         <td>
                             <p-tableCheckbox [value]="element"></p-tableCheckbox>
                         </td>
-                            
-                        <td>{{element.budget?.id}}</td>
-                            
-                            
+
+                        <td>{{element.budget?.montant}}</td>
+
+
                         <td>{{element.montantTotal}}</td>
-                            
-                            
+
+
                         <td>{{element.dateAchat | date :'dd/MM/yyyy HH:mm' }}</td>
-                            
-                            
+
+
                         <td>{{element.typeAchatMateriel?.libelle}}</td>
-                            
+
                         <td>
                             <button pButton pRipple icon="pi pi-pencil"  class="p-button-rounded p-button-info mr-2" (click)="edit(element)"  *ngIf="editActionIsValid"></button>
                             <button pButton pRipple icon="pi pi-list" class="p-button-rounded p-button-secondary mr-2" (click)="view(element)"  *ngIf="viewActionIsValid"></button>

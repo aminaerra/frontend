@@ -9,14 +9,14 @@
                                         <p-dropdown  appendTo="body"  [options]="budgets" [(ngModel)]="item.budget" id="1" [filter]="true" filterMatchMode="contains"
                                                      [showClear]="true" optionLabel="id" placeholder="{{'achatMateriel.budget' | translate}}"  >
                                         </p-dropdown>
-                                        
+
                                     </div>
 
                                         <div class="field col-12 md:col-6">
                                             <label for="2">{{'achatMateriel.montantTotal' | translate}}</label>
                                             <p-inputNumber class="mb-2 mr-2" id="2" placeholder="{{'achatMateriel.montantTotal' | translate}}" [(ngModel)]="item.montantTotal"  >
                                             </p-inputNumber>
-                                            
+
                                         </div>
 
                                         <div class="field col-12 md:col-6">
@@ -24,7 +24,7 @@
                                             <p-calendar appendTo="body" id="3"  [showTime]="true" [showSeconds]="false" placeholder="{{'achatMateriel.dateAchat' | translate}}"  [(ngModel)]="item.dateAchat"
                                                         dateFormat="{{dateFormat}}"  >
                                             </p-calendar>
-                                            
+
                                         </div>
 
                                     <div class="field col-11 md:col-6">
@@ -32,7 +32,7 @@
                                         <p-dropdown  appendTo="body"  [options]="typeAchatMateriels" [(ngModel)]="item.typeAchatMateriel" id="4" [filter]="true" filterMatchMode="contains"
                                                      [showClear]="true" optionLabel="libelle" placeholder="{{'achatMateriel.typeAchatMateriel' | translate}}"  >
                                         </p-dropdown>
-                                        
+
                                     </div>
 
                         </div>
@@ -46,23 +46,23 @@
                                                                              id="1"  [filter]="true" filterMatchMode="contains" [showClear]="true" optionLabel="libelle"
                                                                              placeholder="Produit"  >
                                                                 </p-dropdown>
-                                                                
+
                                                             </div>
 
                                                             <div class="field col-12 md:col-6">
                                                                 <label for="2">Qte achetee</label>
                                                                 <p-inputNumber class="mb-2 mr-2" id="qteAchetee" placeholder="Qte achetee"  [(ngModel)]="achatMaterielDetailsElement.qteAchetee"></p-inputNumber>
-                                                                
+
                                                             </div>
                                                             <div class="field col-12 md:col-6">
                                                                 <label for="3">Qte recue</label>
                                                                 <p-inputNumber class="mb-2 mr-2" id="qteRecue" placeholder="Qte recue"  [(ngModel)]="achatMaterielDetailsElement.qteRecue"></p-inputNumber>
-                                                                
+
                                                             </div>
                                                             <div class="field col-12 md:col-6">
                                                                 <label for="4">Qte livree</label>
                                                                 <p-inputNumber class="mb-2 mr-2" id="qteLivree" placeholder="Qte livree"  [(ngModel)]="achatMaterielDetailsElement.qteLivree"></p-inputNumber>
-                                                                
+
                                                             </div>
                                                 <div class="field col-12 md:col-1">
                                                     <button pButton pRipple type="button" icon="pi pi-plus" class="mt-4" label="OK" (click)="addAchatMaterielDetails()"></button>

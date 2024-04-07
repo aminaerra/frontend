@@ -14,7 +14,7 @@
                     </div>
                     <div class="field col-12 md:col-6">
                         <label for="3">{{'entiteAdmin.chef' | translate}}</label>
-                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'entiteAdmin.chef' | translate}}" autofocus  id="3" [ngModel]="item.chef?.id">
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'entiteAdmin.chef' | translate}}" autofocus  id="3" [ngModel]="item.chef?.nom + item.chef?.prenom">
                     </div>
                 </div>
             </p-tabPanel>

@@ -84,46 +84,46 @@
                         <th style="width: 3rem">
                             <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
                         </th>
-                                
+
                         <th pSortableColumn="produit">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMaterielDetail.produit' | translate}}</span>
                                 <p-sortIcon field="produit"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="qteAchetee">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMaterielDetail.qteAchetee' | translate}}</span>
                                 <p-sortIcon field="qteAchetee"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="qteRecue">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMaterielDetail.qteRecue' | translate}}</span>
                                 <p-sortIcon field="qteRecue"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="qteLivree">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMaterielDetail.qteLivree' | translate}}</span>
                                 <p-sortIcon field="qteLivree"></p-sortIcon>
                             </div>
                         </th>
-                                
-                                
+
+
                         <th pSortableColumn="achatMateriel">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'achatMaterielDetail.achatMateriel' | translate}}</span>
                                 <p-sortIcon field="achatMateriel"></p-sortIcon>
                             </div>
                         </th>
-                                
+
                         <th>Actions</th>
                     </tr>
                 </ng-template>
@@ -132,21 +132,21 @@
                         <td>
                             <p-tableCheckbox [value]="element"></p-tableCheckbox>
                         </td>
-                            
+
                         <td>{{element.produit?.libelle}}</td>
-                            
-                            
+
+
                         <td>{{element.qteAchetee}}</td>
-                            
-                            
+
+
                         <td>{{element.qteRecue}}</td>
-                            
-                            
+
+
                         <td>{{element.qteLivree}}</td>
-                            
-                            
-                        <td>{{element.achatMateriel?.id}}</td>
-                            
+
+
+                        <td>{{element.achatMateriel?.dateAchat}}</td>
+
                         <td>
                             <button pButton pRipple icon="pi pi-pencil"  class="p-button-rounded p-button-info mr-2" (click)="edit(element)"  *ngIf="editActionIsValid"></button>
                             <button pButton pRipple icon="pi pi-list" class="p-button-rounded p-button-secondary mr-2" (click)="view(element)"  *ngIf="viewActionIsValid"></button>
