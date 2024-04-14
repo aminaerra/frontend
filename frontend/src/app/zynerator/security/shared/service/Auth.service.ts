@@ -38,7 +38,11 @@ export class AuthService {
                 jwt != null ? this.tokenService.saveToken(jwt) : false;
                 this.loadInfos();
                 console.log('you are logged in successfully');
-                this.router.navigate(['/' + environment.rootAppUrl + '/admin']);
+                if (this.hasRole({ authority: 'ROLE_ADMIN' })) {
+                    this.router.navigate(['/' + environment.rootAppUrl + '/admin']);
+                } else if (this.hasRole({ authority: 'ROLE_EMPLOYE' })) {
+                    this.router.navigate(['/' + environment.rootAppUrl + '/employe']);
+                }
             }, (error: HttpErrorResponse) => {
                 this.error = error.error.message;
                 if (error.status === 401) {
@@ -97,15 +101,26 @@ export class AuthService {
     }
 
 
-    public hasRole(role: RoleDto): boolean {
+    public hasRole(role: { authority: string }): boolean {
         const index = this._authenticatedUser.roleUsers.findIndex(r => r.role.authority === role.authority);
         return index > -1 ? true : false;
     }
+
 
     public registerAdmin() {
         this.http.post<any>(this.API + 'api/admin/user/', this.user, {observe: 'response'}).subscribe(
             resp => {
                 this.router.navigate(['admin/admin']);
+            }, (error: HttpErrorResponse) => {
+                console.log(error.error);
+            }
+        );
+    }
+
+    public registerEmploye() {
+        this.http.post<any>(this.API + 'api/employe/user/', this.user, {observe: 'response'}).subscribe(
+            resp => {
+                this.router.navigate(['admin/employe']);
             }, (error: HttpErrorResponse) => {
                 console.log(error.error);
             }

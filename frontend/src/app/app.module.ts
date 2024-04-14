@@ -53,6 +53,8 @@ import {AppLayoutComponent} from "./layout/app.layout.component";
 
 import {AdminModule} from './module/admin/admin.module';
 import {AdminRoutingModule} from './module/admin/admin-routing.module';
+import {EmployeModule} from "./module/employe/employe.module";
+import {EmployeRoutingModule} from "./module/employe/employe-routing.module";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -92,6 +94,8 @@ imports: [
 
   AdminModule,
   AdminRoutingModule,
+  EmployeModule,
+  EmployeRoutingModule,
 
   TranslateModule.forRoot({
   loader: {

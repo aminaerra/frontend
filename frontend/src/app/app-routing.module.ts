@@ -22,6 +22,11 @@ import {RegisterAdminComponent} from 'src/app/module/admin/register-admin/regist
                     loadChildren: () => import( './module/admin/admin-routing.module').then(x => x.AdminRoutingModule),
                     canActivate: [AuthGuard],
                 },
+                {
+                    path: 'employe', // Ajout de la route pour les employés
+                    loadChildren: () => import('./module/employe/employe-routing.module').then(x => x.EmployeRoutingModule),
+                    canActivate: [AuthGuard], // AuthGuard pour protéger la sous-route '/employe'
+                },
                     { path: 'denied', component: AccessComponent },
                 ],
                 canActivate: [AuthGuard]

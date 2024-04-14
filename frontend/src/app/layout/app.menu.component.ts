@@ -15,8 +15,95 @@ export class AppMenuComponent implements OnInit {
   model: any[];
   modelanonymous: any[];
     modelAdmin: any[];
+    modelEmploye: any[]
 constructor(public layoutService: LayoutService, public app: AppComponent, public appMain: AppLayoutComponent, private roleService: RoleService, private authService: AuthService, private router: Router) { }
   ngOnInit() {
+    this.modelEmploye = [
+        {
+            label: 'Pages',
+            icon: 'pi pi-fw pi-briefcase',
+            items: [
+                {
+                    label: 'Mandat',
+                    icon: 'pi pi-wallet',
+                    items: [
+                        {
+                            label: 'Liste responsabilite',
+                            icon: 'pi pi-fw pi-plus-circle',
+                            routerLink: ['/app/admin/mandat/responsabilite/list']
+                        },
+                    ]
+                },
+
+                {
+                    label: 'Employe',
+                    icon: 'pi pi-wallet',
+                    items: [
+                        {
+                            label: 'Liste employe',
+                            icon: 'pi pi-fw pi-plus-circle',
+                            routerLink: ['/app/admin/commun/employe/list']
+                        },
+                    ]
+                },
+                {
+                    label: 'BudgetEntiteAdmin',
+                    icon: 'pi pi-wallet',
+                    items: [
+                        {
+                            label: 'Liste budget entite admin',
+                            icon: 'pi pi-fw pi-plus-circle',
+                            routerLink: ['/app/admin/budget/budget-entite-admin/list']
+                        },
+                    ]
+                },
+                {
+                    label: 'ExpressionBesoin',
+                    icon: 'pi pi-wallet',
+                    items: [
+                        {
+                            label: 'Liste expression besoin detail',
+                            icon: 'pi pi-fw pi-plus-circle',
+                            routerLink: ['/app/admin/expressionbesoin/expression-besoin-detail/list']
+                        },
+                        {
+                            label: 'Liste expression besoin',
+                            icon: 'pi pi-fw pi-plus-circle',
+                            routerLink: ['/app/admin/expressionbesoin/expression-besoin/list']
+                        },
+                    ]
+                },
+                {
+                    label: 'EntiteAdmin',
+                    icon: 'pi pi-wallet',
+                    items: [
+                        {
+                            label: 'Liste entite admin',
+                            icon: 'pi pi-fw pi-plus-circle',
+                            routerLink: ['/app/admin/commun/entite-admin/list']
+                        },
+                    ]
+                },
+                {
+                    label: 'Produit',
+                    icon: 'pi pi-wallet',
+                    items: [
+                        {
+                            label: 'Liste produit',
+                            icon: 'pi pi-fw pi-plus-circle',
+                            routerLink: ['/app/admin/produit/produit/list']
+                        },
+                        {
+                            label: 'Liste categorie produit',
+                            icon: 'pi pi-fw pi-plus-circle',
+                            routerLink: ['/app/admin/produit/categorie-produit/list']
+                        },
+                    ]
+                },
+
+            ]
+        }
+    ];
     this.modelAdmin =
       [
 
@@ -174,6 +261,7 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
 			]
 	    }
     ];
+
         if (this.authService.authenticated) {
             if (this.authService.authenticatedUser.roleUsers) {
               this.authService.authenticatedUser.roleUsers.forEach(role => {
