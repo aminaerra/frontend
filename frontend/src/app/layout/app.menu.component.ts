@@ -30,7 +30,7 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
                         {
                             label: 'Liste responsabilite',
                             icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/admin/mandat/responsabilite/list']
+                            routerLink: ['/app/employe/mandat/responsabilite/list']
                         },
                     ]
                 },
@@ -42,7 +42,7 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
                         {
                             label: 'Liste employe',
                             icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/admin/commun/employe/list']
+                            routerLink: ['/app/employe/commun/employe/list']
                         },
                     ]
                 },
@@ -53,7 +53,7 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
                         {
                             label: 'Liste budget entite admin',
                             icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/admin/budget/budget-entite-admin/list']
+                            routerLink: ['/app/employe/budget/budget-entite-admin/list']
                         },
                     ]
                 },
@@ -64,12 +64,12 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
                         {
                             label: 'Liste expression besoin detail',
                             icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/admin/expressionbesoin/expression-besoin-detail/list']
+                            routerLink: ['/app/employe/expressionbesoin/expression-besoin-detail/list']
                         },
                         {
                             label: 'Liste expression besoin',
                             icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/admin/expressionbesoin/expression-besoin/list']
+                            routerLink: ['/app/employe/expressionbesoin/expression-besoin/list']
                         },
                     ]
                 },
@@ -80,7 +80,7 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
                         {
                             label: 'Liste entite admin',
                             icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/admin/commun/entite-admin/list']
+                            routerLink: ['/app/employe/commun/entite-admin/list']
                         },
                     ]
                 },
@@ -91,12 +91,12 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
                         {
                             label: 'Liste produit',
                             icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/admin/produit/produit/list']
+                            routerLink: ['/app/employe/produit/produit/list']
                         },
                         {
                             label: 'Liste categorie produit',
                             icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/admin/produit/categorie-produit/list']
+                            routerLink: ['/app/employe/produit/categorie-produit/list']
                         },
                     ]
                 },

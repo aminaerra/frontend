@@ -1,0 +1,54 @@
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {AuthService} from "../../../zynerator/security/shared/service/Auth.service";
+import {RoleDto} from "../../../zynerator/security/shared/model/Role.model";
+import {RoleUserDto} from "../../../zynerator/security/shared/model/RoleUser.model";
+import {UserDto} from "../../../zynerator/security/shared/model/User.model";
+
+@Component({
+  selector: 'app-register-employe',
+  templateUrl: './register-employe.component.html',
+  styleUrls: ['./register-employe.component.scss']
+})
+export class RegisterEmployeComponent implements OnInit {
+
+    registerForm = new FormGroup({
+        phone : new FormControl('', Validators.required),
+        firstName : new FormControl('', Validators.required),
+        lastName : new FormControl('', Validators.required),
+        email : new FormControl('', Validators.required),
+        userName : new FormControl('', Validators.required),
+        password : new FormControl('', Validators.required)
+    });
+    constructor(private authService: AuthService) { }
+
+    ngOnInit(): void {
+    }
+
+    submit(){
+        const formValues = this.registerForm.value
+        const {phone,firstName, lastName, email ,userName, password } = formValues;
+        const role = new RoleDto();
+        role.authority = 'ROLE_Employe' ;
+        const roleUser = new RoleUserDto();
+        roleUser.role = role;
+        this.user.firstName = firstName;
+        this.user.lastName = lastName;
+        this.user.phone = phone;
+        this.user.username = userName;
+        this.user.password = password;
+        this.user.email = email;
+        this.user.roleUsers = [roleUser] ;
+        this.authService.registerEmploye();
+    }
+
+    get user(): UserDto {
+        return this.authService.user;
+    }
+
+    set user(value: UserDto) {
+        this.authService.user = value;
+    }
+
+
+}
