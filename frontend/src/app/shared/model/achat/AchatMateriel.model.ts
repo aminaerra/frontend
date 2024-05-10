@@ -13,7 +13,7 @@ export class AchatMaterielDto extends BaseDto{
     public budget: BudgetDto ;
     public typeAchatMateriel: TypeAchatMaterielDto ;
      public achatMaterielDetails: Array<AchatMaterielDetailDto>;
-    
+
 
     constructor() {
         super();

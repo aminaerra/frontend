@@ -8,14 +8,17 @@ export class ProduitDto extends BaseDto{
 
     public libelle: string;
 
+    public prix: null | number;
+
     public categorieProduit: CategorieProduitDto ;
-    
+
 
     constructor() {
         super();
 
         this.code = '';
         this.libelle = '';
+        this.prix= null;
 
         }
 

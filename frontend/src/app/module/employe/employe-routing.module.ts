@@ -52,11 +52,6 @@ import {RegisterEmployeComponent} from "./register-employe/register-employe.comp
                       canActivate: [AuthGuard],
                   },
                   {
-                      path: 'budget',
-                      loadChildren: () => import('src/app/module/employe/view/budget/budget-employe-routing.module').then(x => x.BudgetEmployeRoutingModule),
-                      canActivate: [AuthGuard],
-                  },
-                  {
                       path: 'security',
                       loadChildren: () => import('../security/security-routing.module').then(x => x.SecurityRoutingModule),
                       canActivate: [AuthGuard],

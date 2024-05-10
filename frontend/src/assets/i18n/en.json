@@ -129,6 +129,7 @@
     "produit":{
         "code": "Code",
         "libelle": "Libelle",
+        "prix": "Prix",
         "categorieProduit": "Categorie produit",
         "categorieProduitPlaceHolder": "Select a Categorie produit",
         "categorieProduitPlaceHolderFilter": "Search by Categorie produit",

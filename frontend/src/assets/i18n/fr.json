@@ -26,7 +26,7 @@
     "Mot de passe" : "Mot de passe",
     "prenom": "Prenom",
     "Changer": "Changer",
-	
+
 	"actionPermission": {
     "reference": "Référence",
     "libelle": "Libellé",
@@ -132,6 +132,7 @@
     "produit":{
         "code": "Code",
         "libelle": "Libelle",
+        "prix": "Prix",
         "categorieProduit": "Categorie produit",
         "categorieProduitPlaceHolder": "Select a Categorie produit",
         "categorieProduitPlaceHolderFilter": "Search by Categorie produit",

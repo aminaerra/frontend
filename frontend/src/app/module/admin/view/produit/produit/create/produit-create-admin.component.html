@@ -27,9 +27,14 @@
                                                 <p-dropdown  appendTo="body"  [options]="categorieProduits" [(ngModel)]="item.categorieProduit" id="3" [filter]="true" filterMatchMode="contains"
                                                         [showClear]="true" optionLabel="libelle" placeholder="{{'produit.categorieProduit' | translate}}"  >
                                                 </p-dropdown>
-                                                
+
                                             </div>
 
+                                    <div class="field col-12 md:col-6">
+                                        <label for="2">{{'produit.prix' | translate}}</label>
+                                        <p-inputNumber class="mb-2 mr-2" id="2" placeholder="{{'produit.prix' | translate}}" [(ngModel)]="item.prix"  >
+                                        </p-inputNumber>
+                                        </div>
                                 </div>
                             </p-tabPanel>
 

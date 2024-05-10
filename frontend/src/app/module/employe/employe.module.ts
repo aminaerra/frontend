@@ -26,22 +26,10 @@ import {MessagesModule} from "primeng/messages";
 import {InputNumberModule} from "primeng/inputnumber";
 import {BadgeModule} from "primeng/badge";
 import {MultiSelectModule} from "primeng/multiselect";
-import {BudgetAdminModule} from "../admin/view/budget/budget-admin.module";
-import {BudgetAdminRoutingModule} from "../admin/view/budget/budget-admin-routing.module";
 import {SecurityModule} from "../security/security.module";
 import {SecurityRoutingModule} from "../security/security-routing.module";
-import {CommunAdminModule} from "../admin/view/commun/commun-admin.module";
-import {CommunAdminRoutingModule} from "../admin/view/commun/commun-admin-routing.module";
-import {MandatAdminModule} from "../admin/view/mandat/mandat-admin.module";
-import {MandatAdminRoutingModule} from "../admin/view/mandat/mandat-admin-routing.module";
-import {ExpressionbesoinAdminModule} from "../admin/view/expressionbesoin/expressionbesoin-admin.module";
-import {ExpressionbesoinAdminRoutingModule} from "../admin/view/expressionbesoin/expressionbesoin-admin-routing.module";
-import {ProduitAdminModule} from "../admin/view/produit/produit-admin.module";
-import {ProduitAdminRoutingModule} from "../admin/view/produit/produit-admin-routing.module";
 import {LoginEmployeComponent} from './login-employe/login-employe.component';
 import {RegisterEmployeComponent} from './register-employe/register-employe.component';
-import {BudgetEmployeModule} from "./view/budget/budget-employe.module";
-import {BudgetEmployeRoutingModule} from "./view/budget/budget-employe-routing.module";
 import {CommunEmployeModule} from "./view/commun/commun-employe.module";
 import {CommunEmployeRoutingModule} from "./view/commun/commun-employe-routing.module";
 import {ExpressionbesoinEmployeModule} from "./view/expressionbesoin/expressionbesoin-employe.module";
@@ -92,8 +80,6 @@ import {ProduitEmployeRoutingModule} from "./view/produit/produit-employe-routin
       MandatEmployeRoutingModule,
       CommunEmployeModule,
       CommunEmployeRoutingModule,
-      BudgetEmployeModule,
-      BudgetEmployeRoutingModule,
       SecurityModule,
       SecurityRoutingModule,
 
@@ -107,7 +93,6 @@ import {ProduitEmployeRoutingModule} from "./view/produit/produit-employe-routin
         ProduitEmployeModule,
         MandatEmployeModule,
         CommunEmployeModule,
-        BudgetEmployeModule,
         SecurityModule
     ],
 })

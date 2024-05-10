@@ -47,17 +47,6 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
                     ]
                 },
                 {
-                    label: 'BudgetEntiteAdmin',
-                    icon: 'pi pi-wallet',
-                    items: [
-                        {
-                            label: 'Liste budget entite admin',
-                            icon: 'pi pi-fw pi-plus-circle',
-                            routerLink: ['/app/employe/budget/budget-entite-admin/list']
-                        },
-                    ]
-                },
-                {
                     label: 'ExpressionBesoin',
                     icon: 'pi pi-wallet',
                     items: [
