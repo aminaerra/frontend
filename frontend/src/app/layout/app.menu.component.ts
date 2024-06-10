@@ -20,7 +20,7 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
   ngOnInit() {
     this.modelEmploye = [
         {
-            label: 'Pages',
+            label: 'MENU',
             icon: 'pi pi-fw pi-briefcase',
             items: [
                 {
@@ -29,7 +29,7 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
                     items: [
                         {
                             label: 'Liste responsabilite',
-                            icon: 'pi pi-fw pi-plus-circle',
+                            icon: 'pi pi-fw pi-plus',
                             routerLink: ['/app/employe/mandat/responsabilite/list']
                         },
                     ]
@@ -37,54 +37,54 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
 
                 {
                     label: 'Employe',
-                    icon: 'pi pi-wallet',
+                    icon: 'pi pi-users',
                     items: [
                         {
                             label: 'Liste employe',
-                            icon: 'pi pi-fw pi-plus-circle',
+                            icon: 'pi pi-fw pi-plus',
                             routerLink: ['/app/employe/commun/employe/list']
                         },
                     ]
                 },
                 {
                     label: 'ExpressionBesoin',
-                    icon: 'pi pi-wallet',
+                    icon: 'pi pi-file-edit',
                     items: [
                         {
                             label: 'Liste expression besoin detail',
-                            icon: 'pi pi-fw pi-plus-circle',
+                            icon: 'pi pi-fw pi-plus',
                             routerLink: ['/app/employe/expressionbesoin/expression-besoin-detail/list']
                         },
                         {
                             label: 'Liste expression besoin',
-                            icon: 'pi pi-fw pi-plus-circle',
+                            icon: 'pi pi-fw pi-plus',
                             routerLink: ['/app/employe/expressionbesoin/expression-besoin/list']
                         },
                     ]
                 },
                 {
                     label: 'EntiteAdmin',
-                    icon: 'pi pi-wallet',
+                    icon: 'pi pi-briefcase',
                     items: [
                         {
                             label: 'Liste entite admin',
-                            icon: 'pi pi-fw pi-plus-circle',
+                            icon: 'pi pi-fw pi-plus',
                             routerLink: ['/app/employe/commun/entite-admin/list']
                         },
                     ]
                 },
                 {
                     label: 'Produit',
-                    icon: 'pi pi-wallet',
+                    icon: 'pi pi-shopping-bag',
                     items: [
                         {
                             label: 'Liste produit',
-                            icon: 'pi pi-fw pi-plus-circle',
+                            icon: 'pi pi-fw pi-plus',
                             routerLink: ['/app/employe/produit/produit/list']
                         },
                         {
                             label: 'Liste categorie produit',
-                            icon: 'pi pi-fw pi-plus-circle',
+                            icon: 'pi pi-fw pi-plus',
                             routerLink: ['/app/employe/produit/categorie-produit/list']
                         },
                     ]
@@ -97,7 +97,7 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
       [
 
 				{
-                    label: 'Pages',
+                    label: 'MENU',
                     icon: 'pi pi-fw pi-briefcase',
                     items: [
 					  {
@@ -106,121 +106,121 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
 						items: [
 								  {
 									label: 'Liste responsabilite',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/mandat/responsabilite/list']
 								  },
 								  {
 									label: 'Liste mandat',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/mandat/mandat/list']
 								  },
 						]
 					  },
 					  {
 						label: 'TypeAchatMateriel',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-angle-double-right',
 						items: [
 								  {
 									label: 'Liste type achat materiel',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/achat/type-achat-materiel/list']
 								  },
 						]
 					  },
 					  {
 						label: 'AchatMateriel',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-shopping-cart',
 						items: [
 								  {
 									label: 'Liste achat materiel',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/achat/achat-materiel/list']
 								  },
 						]
 					  },
 					  {
 						label: 'Budget',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-dollar',
 						items: [
 								  {
 									label: 'Liste budget',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/budget/budget/list']
 								  },
 						]
 					  },
 					  {
 						label: 'AchatMaterielDetail',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-cart-plus',
 						items: [
 								  {
 									label: 'Liste achat materiel detail',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/achat/achat-materiel-detail/list']
 								  },
 						]
 					  },
 					  {
 						label: 'Employe',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-users',
 						items: [
 								  {
 									label: 'Liste employe',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/commun/employe/list']
 								  },
 						]
 					  },
 					  {
 						label: 'BudgetEntiteAdmin',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-dollar',
 						items: [
 								  {
 									label: 'Liste budget entite admin',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/budget/budget-entite-admin/list']
 								  },
 						]
 					  },
 					  {
 						label: 'ExpressionBesoin',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-file-edit',
 						items: [
 								  {
 									label: 'Liste expression besoin detail',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/expressionbesoin/expression-besoin-detail/list']
 								  },
 								  {
 									label: 'Liste expression besoin',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/expressionbesoin/expression-besoin/list']
 								  },
 						]
 					  },
 					  {
 						label: 'EntiteAdmin',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-briefcase',
 						items: [
 								  {
 									label: 'Liste entite admin',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/commun/entite-admin/list']
 								  },
 						]
 					  },
 					  {
 						label: 'Produit',
-						icon: 'pi pi-wallet',
+						icon: 'pi pi-shopping-bag',
 						items: [
 								  {
 									label: 'Liste produit',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/produit/produit/list']
 								  },
 								  {
 									label: 'Liste categorie produit',
-									icon: 'pi pi-fw pi-plus-circle',
+									icon: 'pi pi-fw pi-plus',
 									routerLink: ['/app/admin/produit/categorie-produit/list']
 								  },
 						]
@@ -228,21 +228,21 @@ constructor(public layoutService: LayoutService, public app: AppComponent, publi
 
 				   {
 					  label: 'Security Management',
-					  icon: 'pi pi-wallet',
+					  icon: 'pi pi-shield',
 					  items: [
 						  {
 							  label: 'List User',
-							  icon: 'pi pi-fw pi-plus-circle',
+							  icon: 'pi pi-fw pi-plus',
 							  routerLink: ['/app/admin/security/user/list']
 						  },
 						  {
 							  label: 'List Model',
-							  icon: 'pi pi-fw pi-plus-circle',
+							  icon: 'pi pi-fw pi-plus',
 							  routerLink: ['/app/admin/security/model-permission/list']
 						  },
 						  {
 							  label: 'List Action Permission',
-							  icon: 'pi pi-fw pi-plus-circle',
+							  icon: 'pi pi-fw pi-plus',
 							  routerLink: ['/app/admin/security/action-permission/list']
 						  },
 					  ]

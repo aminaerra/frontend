@@ -17,13 +17,13 @@
         <p-dropdown (onChange)="useLanguage(selectedLanguage)" [options]="languageOptions" [(ngModel)]="selectedLanguage"   [appendTo]="'body'"></p-dropdown>
 
         <button  class="p-link layout-topbar-button" (click)="edit(authenticatedUser)">
-            <i class="pi pi-user"></i>
-            <span>Profile</span>
+            <i class="pi pi-user" style="background-color: gray; color: white; border-radius: 50%; padding: 10px; margin-right: 5px;"></i>
+            <span style="color: black;">Profile</span>
         </button>
 
         <button class="p-link layout-topbar-button" (click)="logout()">
-        <i class="pi pi-fw pi-sign-in"></i>
-        <span >signOut</span>
+        <i class="pi pi-fw pi-sign-in" style="color: black"></i>
+        <span style="color: black;" >signOut</span>
     </button>
     </div>
 </div>
